@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roopashree Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafafa; 
+      color: #222;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      transition: background-color 0.5s ease;
+    }
+
+    nav {
+      background: darkblue;
+      padding: 1rem 0;
+      box-shadow: 0 3px 7px rgba(128, 132, 134, 0.3);
+      border-radius: 0 0 30px 30px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      max-width: 900px;
+      margin: 0 auto;
+      gap: 2rem;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #00497a;
+      color: whitesmoke;
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 3rem auto 3rem;
+      padding: 0 1rem;
+      text-align: center;
+      background: white;
+      border-radius: 30px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .hero {
+      padding: 4rem 1rem 4rem;
+      color: #444;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #6e6c68;
+      box-shadow: 0 8px 20px rgba(117, 116, 112, 0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      background-color: white;
+      display: block;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 14px 30px rgba(139, 138, 134, 0.3);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      margin-bottom: 0.4rem;
+      text-transform: capitalize;
+      color: #222;
+      font-style: Sans-serif;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      font-style: Sans-serif;
+      color: #00497a;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.55;
+      color: #555;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 1.75rem;
+      flex-wrap: wrap;
+      background-color:none;
+    }
+
+    .btn {
+      background-color: lightblue;
+      color: #00497a;
+      border: none;
+      padding: 1rem 3rem;
+      border-radius: 40px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(119, 117, 113, 0.3);
+      transition: background-color 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      user-select: none;
+    }
+
+    .btn:hover, .btn:focus {
+      background-color: #706b68;
+      color: black;
+      box-shadow: 0 8px 24px rgba(116, 111, 108, 0.45);
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: auto;
+    }
+
+    .social-links {
+      margin: 1rem 0;
+    }
+
+    .social-links a {
+      margin: 0 0.5rem;
+      color: darkblue;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #00497a;
+    }
+
+    @media(max-width: 650px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .profile-photo {
+        width: 130px;
+        height: 130px;
+      }
+
+      .btn {
+        padding: 0.8rem 2.2rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="biodata.html">Biodata</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <img src="https://i.pinimg.com/474x/62/01/0d/62010d848b790a2336d1542fcda51789.jpg?nii=t" alt="Portrait" class="profile-photo" />
+      <h1>Hello, I'm Roopashree</h1>
+      <h2>Web Developer & Data Analyst</h2>
+      <p class="intro">
+        Skilled in turning data into actionable insights, I analyze complex datasets to drive informed decisions. Passionate about blending creativity with data-driven solutions to build engaging digital experiences and optimize performance
+      </p>
+      <div class="btn-container">
+        <a href="resume.html" class="btn" role="button">View Resume</a>
+        <a href="biodata.html" class="btn" role="button">View Biodata</a>
+      </div>
+    </section>
+  
+
+ 
+    <div class="social-links">
+      <a href="mailto:johndoe@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+     <footer>
+    <p>© 2025 Roopashree. All rights reserved.</p>
+  </footer>
+</body>
+</main>
+</html>
